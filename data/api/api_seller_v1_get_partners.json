@@ -1,0 +1,7 @@
+{
+    "api_url" : "/api/seller/v1.0/get_partners",
+    "query" : "",
+    "req_method" : "GET",
+    "req_body" : {},
+    "res_body" : {"code":0,"message":"ok","result":{"null":{"group_by_id":null,"group_name":null,"group_type":null,"friends":{"12012464434050002":{"friend_id":"12012464434050002","friend_name":"................................."},"12903108523050002":{"friend_id":"12903108523050002","friend_name":"........................"},"20416656048050002":{"friend_id":"20416656048050002","friend_name":"......-..............."},"11778764465050002":{"friend_id":"11778764465050002","friend_name":"............1215"}}}}}
+}

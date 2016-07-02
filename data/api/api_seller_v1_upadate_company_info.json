@@ -1,0 +1,7 @@
+{
+    "api_url" : "/api/seller/v1.0/upadate_company_info",
+    "query" : "",
+    "req_method" : "POST",
+    "req_body" : {"org_profile":"hello........."},
+    "res_body" : {"code":0,"message":"ok","result":{"msg":"success"}}
+}

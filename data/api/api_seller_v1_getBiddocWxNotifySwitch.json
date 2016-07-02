@@ -1,0 +1,7 @@
+{
+    "api_url" : "/api/seller/v1.0/getBiddocWxNotifySwitch",
+    "query" : "",
+    "req_method" : "GET",
+    "req_body" : {},
+    "res_body" : {"code":0,"message":"ok","result":{"biddocWxNotifySwitch":1}}
+}

@@ -1,0 +1,616 @@
+16-06-15 14:55:51.582 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆失败！
+16-06-15 14:55:51.607 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 14:55:51.610 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{}
+16-06-15 14:57:18.312 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆失败！
+16-06-15 14:57:18.332 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 14:57:18.334 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{}
+16-06-15 14:58:01.343 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆失败！
+16-06-15 14:58:01.359 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 14:58:01.365 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{}
+16-06-15 14:59:04.405 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆失败！
+16-06-15 14:59:04.432 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 14:59:04.436 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{}
+16-06-15 15:01:15.477 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆失败！
+16-06-15 15:01:15.481 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:01:15.481 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{}
+16-06-15 15:01:54.860 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆失败！
+16-06-15 15:01:54.866 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:01:54.867 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{}
+16-06-15 15:03:36.427 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆失败！
+16-06-15 15:03:36.431 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:03:36.431 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{}
+16-06-15 15:09:32.697 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆成功！
+16-06-15 15:09:32.720 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:09:32.726 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{ code: 0,
+  message: '[LOGIN] OK',
+  result: 
+   { account_id: 3969554632050000,
+     user_access_token: 'Bearer 64f84417ec67350c257b20f6853a238439c869ab',
+     access_token_lifetime: 43200,
+     user_refresh_token: 'Bearer 7ca45409383accfcdd0c980a0fed5ac270ce79dc',
+     registerState: 'ok',
+     directory_url: 'http://seller.sosoqipei.com/main/index.html#/order' } }
+16-06-15 15:09:32.944 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/aminitdata : perform success!
+16-06-15 15:09:32.982 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/gettradingorders : perform success!
+16-06-15 15:09:32.984 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/friend_info : perform success!
+16-06-15 15:09:32.996 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/close_chat : perform success!
+16-06-15 15:09:32.999 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateBiddocNotifySwitch : perform success!
+16-06-15 15:09:33.001 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/getBiddocWxNotifySwitch : perform success!
+16-06-15 15:09:33.009 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/biddocInfo : perform success!
+16-06-15 15:09:33.016 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/walletpaylist : perform success!
+16-06-15 15:09:33.018 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/passwordcheck : perform success!
+16-06-15 15:09:33.026 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_partners : perform success!
+16-06-15 15:09:33.030 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/withdraw : perform success!
+16-06-15 15:09:33.034 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/setwalletpassword : perform success!
+16-06-15 15:09:33.037 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/soudoucostlist : perform success!
+16-06-15 15:09:33.044 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/historyorder : perform success!
+16-06-15 15:09:33.047 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/companybalance : perform success!
+16-06-15 15:09:33.053 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newwalletpassword : perform success!
+16-06-15 15:09:33.055 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_order_info : perform success!
+16-06-15 15:09:33.063 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateorderstatus : perform success!
+16-06-15 15:09:33.123 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/buyercommunicate : perform success!
+16-06-15 15:09:33.336 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/communicate_by_chatcode : perform success!
+16-06-15 15:09:33.488 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/upadate_company_info : perform success!
+16-06-15 15:09:33.501 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updatesellerpassword : perform success!
+16-06-15 15:09:33.560 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/initordercenter : perform success!
+16-06-15 15:09:33.650 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newBiddocs : perform success!
+16-06-15 15:09:33.742 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/commuBiddocs : perform success!
+16-06-15 15:09:33.744 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 回归测试结束！
+16-06-15 15:09:50.541 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆成功！
+16-06-15 15:09:50.546 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:09:50.549 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{ code: 0,
+  message: '[LOGIN] OK',
+  result: 
+   { account_id: 3969554632050000,
+     user_access_token: 'Bearer 44d22265b9056feaec2b9f92c8eb57a4c6bf935f',
+     access_token_lifetime: 43200,
+     user_refresh_token: 'Bearer a4d24afb5e02489717252a23a80910fe346d90fd',
+     registerState: 'ok',
+     directory_url: 'http://seller.sosoqipei.com/main/index.html#/order' } }
+16-06-15 15:09:50.737 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/close_chat : perform success!
+16-06-15 15:09:50.738 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/aminitdata : perform success!
+16-06-15 15:09:50.739 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/getBiddocWxNotifySwitch : perform success!
+16-06-15 15:09:50.776 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/gettradingorders : perform success!
+16-06-15 15:09:50.780 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/walletpaylist : perform success!
+16-06-15 15:09:50.781 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/withdraw : perform success!
+16-06-15 15:09:50.784 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_order_info : perform success!
+16-06-15 15:09:50.786 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newwalletpassword : perform success!
+16-06-15 15:09:50.794 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/setwalletpassword : perform success!
+16-06-15 15:09:50.796 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateBiddocNotifySwitch : perform success!
+16-06-15 15:09:50.808 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/biddocInfo : perform success!
+16-06-15 15:09:50.814 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/passwordcheck : perform success!
+16-06-15 15:09:50.818 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/companybalance : perform success!
+16-06-15 15:09:50.820 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/soudoucostlist : perform success!
+16-06-15 15:09:50.821 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_partners : perform success!
+16-06-15 15:09:50.823 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/historyorder : perform success!
+16-06-15 15:09:50.854 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateorderstatus : perform success!
+16-06-15 15:09:50.862 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/buyercommunicate : perform success!
+16-06-15 15:09:51.061 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/communicate_by_chatcode : perform success!
+16-06-15 15:09:51.268 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/upadate_company_info : perform success!
+16-06-15 15:09:51.271 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/initordercenter : perform success!
+16-06-15 15:09:51.280 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updatesellerpassword : perform success!
+16-06-15 15:09:51.322 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newBiddocs : perform success!
+16-06-15 15:09:51.430 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/commuBiddocs : perform success!
+16-06-15 15:09:52.146 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/friend_info : perform success!
+16-06-15 15:09:52.146 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 回归测试结束！
+16-06-15 15:14:43.882 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆成功！
+16-06-15 15:14:43.902 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:14:43.903 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{ code: 0,
+  message: '[LOGIN] OK',
+  result: 
+   { account_id: 3969554632050000,
+     user_access_token: 'Bearer f5e755f90a07a84161b8c2e9b15f4871fd876ce5',
+     access_token_lifetime: 43200,
+     user_refresh_token: 'Bearer 59e15ff4c16fd909e5416b1d623e3d1d159b3c5f',
+     registerState: 'ok',
+     directory_url: 'http://seller.sosoqipei.com/main/index.html#/order' } }
+16-06-15 15:14:44.123 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/close_chat : perform success!
+16-06-15 15:14:44.128 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/aminitdata : perform success!
+16-06-15 15:14:44.132 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/upadate_company_info : perform success!
+16-06-15 15:14:44.145 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/gettradingorders : perform success!
+16-06-15 15:14:44.147 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/getBiddocWxNotifySwitch : perform success!
+16-06-15 15:14:44.148 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateBiddocNotifySwitch : perform success!
+16-06-15 15:14:44.149 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/friend_info : perform success!
+16-06-15 15:14:44.165 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newwalletpassword : perform success!
+16-06-15 15:14:44.166 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/withdraw : perform success!
+16-06-15 15:14:44.180 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/biddocInfo : perform success!
+16-06-15 15:14:44.187 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/walletpaylist : perform success!
+16-06-15 15:14:44.190 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/historyorder : perform success!
+16-06-15 15:14:44.192 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/soudoucostlist : perform success!
+16-06-15 15:14:44.198 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/companybalance : perform success!
+16-06-15 15:14:44.199 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/setwalletpassword : perform success!
+16-06-15 15:14:44.200 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/passwordcheck : perform success!
+16-06-15 15:14:44.200 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_partners : perform success!
+16-06-15 15:14:44.203 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_order_info : perform success!
+16-06-15 15:14:44.216 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateorderstatus : perform success!
+16-06-15 15:14:44.237 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/buyercommunicate : perform success!
+16-06-15 15:14:44.453 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/communicate_by_chatcode : perform success!
+16-06-15 15:14:44.666 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updatesellerpassword : perform success!
+16-06-15 15:14:44.743 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/initordercenter : perform success!
+16-06-15 15:14:44.821 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newBiddocs : perform success!
+16-06-15 15:14:44.992 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/commuBiddocs : perform success!
+16-06-15 15:14:44.993 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 回归测试结束！
+16-06-15 15:15:10.820 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 缺失测试数据
+16-06-15 15:15:10.835 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆成功！
+16-06-15 15:15:10.848 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:15:10.850 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{ code: 0,
+  message: '[LOGIN] OK',
+  result: 
+   { account_id: 3969554632050000,
+     user_access_token: 'Bearer 912a5047dec0d68ede8a712864496e1797fc1d43',
+     access_token_lifetime: 43200,
+     user_refresh_token: 'Bearer bf0ebc7b2c752f768ef05dcc8f605643234df5a4',
+     registerState: 'ok',
+     directory_url: 'http://seller.sosoqipei.com/main/index.html#/order' } }
+16-06-15 15:15:11.060 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/close_chat : perform success!
+16-06-15 15:15:11.076 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/setwalletpassword : perform success!
+16-06-15 15:15:11.082 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/walletpaylist : perform success!
+16-06-15 15:15:11.083 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/getBiddocWxNotifySwitch : perform success!
+16-06-15 15:15:11.083 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/upadate_company_info : perform success!
+16-06-15 15:15:11.087 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_order_info : perform success!
+16-06-15 15:15:11.088 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newwalletpassword : perform success!
+16-06-15 15:15:11.088 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateBiddocNotifySwitch : perform success!
+16-06-15 15:15:11.099 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/historyorder : perform success!
+16-06-15 15:15:11.100 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/soudoucostlist : perform success!
+16-06-15 15:15:11.101 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/withdraw : perform success!
+16-06-15 15:15:11.104 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/friend_info : perform success!
+16-06-15 15:15:11.109 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/biddocInfo : perform success!
+16-06-15 15:15:11.116 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/gettradingorders : perform success!
+16-06-15 15:15:11.117 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/aminitdata : perform success!
+16-06-15 15:15:11.118 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/passwordcheck : perform success!
+16-06-15 15:15:11.118 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/companybalance : perform success!
+16-06-15 15:15:11.125 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateorderstatus : perform success!
+16-06-15 15:15:11.129 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_partners : perform success!
+16-06-15 15:15:11.194 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/buyercommunicate : perform success!
+16-06-15 15:15:11.389 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/communicate_by_chatcode : perform success!
+16-06-15 15:15:11.591 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updatesellerpassword : perform success!
+16-06-15 15:15:11.608 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/initordercenter : perform success!
+16-06-15 15:15:11.652 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newBiddocs : perform success!
+16-06-15 15:15:11.740 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/commuBiddocs : perform success!
+16-06-15 15:15:11.740 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 回归测试结束！
+16-06-15 15:16:50.908 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 缺失测试数据
+16-06-15 15:16:50.916 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆成功！
+16-06-15 15:16:50.928 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:16:50.929 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{ code: 0,
+  message: '[LOGIN] OK',
+  result: 
+   { account_id: 3969554632050000,
+     user_access_token: 'Bearer 1aae9b9ad5f0eeceaa79b04957b8d0d20946ea79',
+     access_token_lifetime: 43200,
+     user_refresh_token: 'Bearer da66904f29cd4ad1842e3155548591338c466c8f',
+     registerState: 'ok',
+     directory_url: 'http://seller.sosoqipei.com/main/index.html#/order' } }
+16-06-15 15:16:51.110 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/biddocInfo : perform success!
+16-06-15 15:16:51.132 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/walletpaylist : perform success!
+16-06-15 15:16:51.132 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/close_chat : perform success!
+16-06-15 15:16:51.144 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/companybalance : perform success!
+16-06-15 15:16:51.157 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/soudoucostlist : perform success!
+16-06-15 15:16:51.158 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/getBiddocWxNotifySwitch : perform success!
+16-06-15 15:16:51.162 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateBiddocNotifySwitch : perform success!
+16-06-15 15:16:51.171 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/friend_info : perform success!
+16-06-15 15:16:51.172 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/setwalletpassword : perform success!
+16-06-15 15:16:51.188 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/passwordcheck : perform success!
+16-06-15 15:16:51.189 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newwalletpassword : perform success!
+16-06-15 15:16:51.191 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/historyorder : perform success!
+16-06-15 15:16:51.191 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/aminitdata : perform success!
+16-06-15 15:16:51.195 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/gettradingorders : perform success!
+16-06-15 15:16:51.199 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_order_info : perform success!
+16-06-15 15:16:51.208 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateorderstatus : perform success!
+16-06-15 15:16:51.215 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_partners : perform success!
+16-06-15 15:16:51.344 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/withdraw : perform success!
+16-06-15 15:16:51.363 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/buyercommunicate : perform success!
+16-06-15 15:16:51.558 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/communicate_by_chatcode : perform success!
+16-06-15 15:16:51.651 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updatesellerpassword : perform success!
+16-06-15 15:16:51.653 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/upadate_company_info : perform success!
+16-06-15 15:16:51.854 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/initordercenter : perform success!
+16-06-15 15:16:51.920 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newBiddocs : perform success!
+16-06-15 15:16:51.985 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/commuBiddocs : perform success!
+16-06-15 15:16:51.986 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 回归测试结束！
+16-06-15 15:19:18.522 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆成功！
+16-06-15 15:19:18.548 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:19:18.549 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{ code: 0,
+  message: '[LOGIN] OK',
+  result: 
+   { account_id: 3969554632050000,
+     user_access_token: 'Bearer 6e4df245972e7802378fbe80ec24937d7ec84d0e',
+     access_token_lifetime: 43200,
+     user_refresh_token: 'Bearer ad1ab742013fbdb2c052f8b535a7ae9161fca64f',
+     registerState: 'ok',
+     directory_url: 'http://seller.sosoqipei.com/main/index.html#/order' } }
+16-06-15 15:19:18.733 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/close_chat : perform success!
+16-06-15 15:19:18.759 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateBiddocNotifySwitch : perform success!
+16-06-15 15:19:18.761 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newwalletpassword : perform success!
+16-06-15 15:19:18.886 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/walletpaylist : perform success!
+16-06-15 15:19:18.887 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/companybalance : perform success!
+16-06-15 15:19:18.888 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/aminitdata : perform success!
+16-06-15 15:19:18.889 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/friend_info : perform success!
+16-06-15 15:19:18.889 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/getBiddocWxNotifySwitch : perform success!
+16-06-15 15:19:18.898 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/setwalletpassword : perform success!
+16-06-15 15:19:18.909 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/historyorder : perform success!
+16-06-15 15:19:18.911 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/biddocInfo : perform success!
+16-06-15 15:19:18.919 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/gettradingorders : perform success!
+16-06-15 15:19:18.919 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/passwordcheck : perform success!
+16-06-15 15:19:18.920 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/buyercommunicate : perform success!
+16-06-15 15:19:18.922 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/soudoucostlist : perform success!
+16-06-15 15:19:18.923 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/withdraw : perform success!
+16-06-15 15:19:18.923 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_order_info : perform success!
+16-06-15 15:19:18.938 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_partners : perform success!
+16-06-15 15:19:18.945 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateorderstatus : perform success!
+16-06-15 15:19:19.217 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/communicate_by_chatcode : perform success!
+16-06-15 15:19:19.404 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/upadate_company_info : perform success!
+16-06-15 15:19:19.405 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updatesellerpassword : perform success!
+16-06-15 15:19:19.442 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/initordercenter : perform success!
+16-06-15 15:19:19.459 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/commuBiddocs : perform success!
+16-06-15 15:19:19.495 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newBiddocs : perform success!
+16-06-15 15:19:19.496 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 回归测试结束！
+16-06-15 15:19:19.645 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 退出系统错误：{ [AssertionError: expected 120004 to be 0]
+  operator: 'to be',
+  expected: 0,
+  showDiff: true,
+  actual: 120004,
+  stackStartFunction: [Function],
+  negate: false,
+  assertion: 
+   Assertion {
+     obj: 120004,
+     anyOne: false,
+     negate: false,
+     params: 
+      { operator: 'to be',
+        expected: 0,
+        message: undefined,
+        showDiff: true,
+        actual: 120004,
+        stackStartFunction: [Function],
+        negate: false,
+        assertion: [Circular] } } }
+16-06-15 15:22:42.505 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆成功！
+16-06-15 15:22:42.523 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:22:42.524 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{ code: 0,
+  message: '[LOGIN] OK',
+  result: 
+   { account_id: 3969554632050000,
+     user_access_token: 'Bearer 2081bbae81b0ab4a574167ec02d28ae8280e6100',
+     access_token_lifetime: 43200,
+     user_refresh_token: 'Bearer a18c2e25c698be1b65bcbbc10bbac257d18bf81f',
+     registerState: 'ok',
+     directory_url: 'http://seller.sosoqipei.com/main/index.html#/order' } }
+16-06-15 15:22:42.731 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/aminitdata : perform success!
+16-06-15 15:22:42.734 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/biddocInfo : perform success!
+16-06-15 15:22:42.740 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/getBiddocWxNotifySwitch : perform success!
+16-06-15 15:22:42.741 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/close_chat : perform success!
+16-06-15 15:22:42.742 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/companybalance : perform success!
+16-06-15 15:22:42.747 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/walletpaylist : perform success!
+16-06-15 15:22:42.760 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/setwalletpassword : perform success!
+16-06-15 15:22:42.764 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/historyorder : perform success!
+16-06-15 15:22:42.764 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateBiddocNotifySwitch : perform success!
+16-06-15 15:22:42.765 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/passwordcheck : perform success!
+16-06-15 15:22:42.777 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/upadate_company_info : perform success!
+16-06-15 15:22:42.777 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newwalletpassword : perform success!
+16-06-15 15:22:42.779 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_order_info : perform success!
+16-06-15 15:22:42.781 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/gettradingorders : perform success!
+16-06-15 15:22:42.782 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/withdraw : perform success!
+16-06-15 15:22:42.786 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/soudoucostlist : perform success!
+16-06-15 15:22:42.809 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/friend_info : perform success!
+16-06-15 15:22:42.810 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/buyercommunicate : perform success!
+16-06-15 15:22:42.812 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_partners : perform success!
+16-06-15 15:22:42.841 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateorderstatus : perform success!
+16-06-15 15:22:43.104 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/communicate_by_chatcode : perform success!
+16-06-15 15:22:43.279 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updatesellerpassword : perform success!
+16-06-15 15:22:43.322 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/initordercenter : perform success!
+16-06-15 15:22:43.455 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newBiddocs : perform success!
+16-06-15 15:22:43.518 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/commuBiddocs : perform success!
+16-06-15 15:22:43.519 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 回归测试结束！
+16-06-15 15:22:43.717 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 退出系统错误：{ [AssertionError: expected 120004 to be 0]
+  operator: 'to be',
+  expected: 0,
+  showDiff: true,
+  actual: 120004,
+  stackStartFunction: [Function],
+  negate: false,
+  assertion: 
+   Assertion {
+     obj: 120004,
+     anyOne: false,
+     negate: false,
+     params: 
+      { operator: 'to be',
+        expected: 0,
+        message: undefined,
+        showDiff: true,
+        actual: 120004,
+        stackStartFunction: [Function],
+        negate: false,
+        assertion: [Circular] } } }
+16-06-15 15:24:45.555 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆成功！
+16-06-15 15:24:45.577 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:24:45.578 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{ code: 0,
+  message: '[LOGIN] OK',
+  result: 
+   { account_id: 3969554632050000,
+     user_access_token: 'Bearer 50a3ebca9d5a9e660313e5f4bd6574bccd33c6eb',
+     access_token_lifetime: 43200,
+     user_refresh_token: 'Bearer a46a6e79b0f615a1386906027fe6701ba6affba8',
+     registerState: 'ok',
+     directory_url: 'http://seller.sosoqipei.com/main/index.html#/order' } }
+16-06-15 15:24:45.750 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/close_chat : perform success!
+16-06-15 15:24:45.784 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/gettradingorders : perform success!
+16-06-15 15:24:45.786 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/getBiddocWxNotifySwitch : perform success!
+16-06-15 15:24:45.795 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/walletpaylist : perform success!
+16-06-15 15:24:45.817 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/passwordcheck : perform success!
+16-06-15 15:24:45.818 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/upadate_company_info : perform success!
+16-06-15 15:24:45.819 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_order_info : perform success!
+16-06-15 15:24:45.821 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newwalletpassword : perform success!
+16-06-15 15:24:45.822 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/aminitdata : perform success!
+16-06-15 15:24:45.825 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/soudoucostlist : perform success!
+16-06-15 15:24:45.826 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/setwalletpassword : perform success!
+16-06-15 15:24:45.828 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_partners : perform success!
+16-06-15 15:24:45.830 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/biddocInfo : perform success!
+16-06-15 15:24:45.837 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/withdraw : perform success!
+16-06-15 15:24:45.839 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/companybalance : perform success!
+16-06-15 15:24:45.847 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/historyorder : perform success!
+16-06-15 15:24:45.868 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateorderstatus : perform success!
+16-06-15 15:24:45.920 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateBiddocNotifySwitch : perform success!
+16-06-15 15:24:45.923 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/friend_info : perform success!
+16-06-15 15:24:45.960 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/buyercommunicate : perform success!
+16-06-15 15:24:46.163 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/communicate_by_chatcode : perform success!
+16-06-15 15:24:46.324 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updatesellerpassword : perform success!
+16-06-15 15:24:46.425 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/initordercenter : perform success!
+16-06-15 15:24:46.464 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newBiddocs : perform success!
+16-06-15 15:24:46.573 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/commuBiddocs : perform success!
+16-06-15 15:24:46.574 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 回归测试结束！
+16-06-15 15:24:46.695 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 退出系统错误：{ code: 120004,
+  message: '[LOGIN] Malformed auth header,access or refresh token is malformed.',
+  stack: 'Malformed auth header,token is empty.' }
+16-06-15 15:29:25.179 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆成功！
+16-06-15 15:29:25.199 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:29:25.201 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{ code: 0,
+  message: '[LOGIN] OK',
+  result: 
+   { account_id: 3969554632050000,
+     user_access_token: 'Bearer 955c9c0cda92346fc61f53f5814e59c0830d2eec',
+     access_token_lifetime: 43200,
+     user_refresh_token: 'Bearer 566d3f5c55abc27934874e052d7fa6466f1bf577',
+     registerState: 'ok',
+     directory_url: 'http://seller.sosoqipei.com/main/index.html#/order' } }
+16-06-15 15:29:25.404 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateBiddocNotifySwitch : perform success!
+16-06-15 15:29:25.411 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/setwalletpassword : perform success!
+16-06-15 15:29:25.417 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/walletpaylist : perform success!
+16-06-15 15:29:25.422 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/getBiddocWxNotifySwitch : perform success!
+16-06-15 15:29:25.423 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/close_chat : perform success!
+16-06-15 15:29:25.427 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/companybalance : perform success!
+16-06-15 15:29:25.428 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newwalletpassword : perform success!
+16-06-15 15:29:25.430 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/soudoucostlist : perform success!
+16-06-15 15:29:25.434 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/gettradingorders : perform success!
+16-06-15 15:29:25.436 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/friend_info : perform success!
+16-06-15 15:29:25.438 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/aminitdata : perform success!
+16-06-15 15:29:25.442 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_partners : perform success!
+16-06-15 15:29:25.447 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/biddocInfo : perform success!
+16-06-15 15:29:25.453 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/passwordcheck : perform success!
+16-06-15 15:29:25.455 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/withdraw : perform success!
+16-06-15 15:29:25.460 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/historyorder : perform success!
+16-06-15 15:29:25.465 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_order_info : perform success!
+16-06-15 15:29:25.494 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateorderstatus : perform success!
+16-06-15 15:29:25.537 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/buyercommunicate : perform success!
+16-06-15 15:29:25.761 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/communicate_by_chatcode : perform success!
+16-06-15 15:29:25.939 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/upadate_company_info : perform success!
+16-06-15 15:29:25.940 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updatesellerpassword : perform success!
+16-06-15 15:29:25.954 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/initordercenter : perform success!
+16-06-15 15:29:25.974 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newBiddocs : perform success!
+16-06-15 15:29:26.174 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/commuBiddocs : perform success!
+16-06-15 15:29:26.175 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 回归测试结束！
+16-06-15 15:32:37.006 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆成功！
+16-06-15 15:32:37.027 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:32:37.029 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{ code: 0,
+  message: '[LOGIN] OK',
+  result: 
+   { account_id: 3969554632050000,
+     user_access_token: 'Bearer 2bb245a4343fb5d0ab57aa8eafdd32008db1db5e',
+     access_token_lifetime: 43200,
+     user_refresh_token: 'Bearer fe9773eaec7f2179bda1c0357a3e8c5a8880563f',
+     registerState: 'ok',
+     directory_url: 'http://seller.sosoqipei.com/main/index.html#/order' } }
+16-06-15 15:32:37.240 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/getBiddocWxNotifySwitch : perform success!
+16-06-15 15:32:37.250 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/upadate_company_info : perform success!
+16-06-15 15:32:37.258 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_order_info : perform success!
+16-06-15 15:32:37.262 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/walletpaylist : perform success!
+16-06-15 15:32:37.266 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_partners : perform success!
+16-06-15 15:32:37.273 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/close_chat : perform success!
+16-06-15 15:32:37.280 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/gettradingorders : perform success!
+16-06-15 15:32:37.283 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/passwordcheck : perform success!
+16-06-15 15:32:37.296 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/biddocInfo : perform success!
+16-06-15 15:32:37.300 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/setwalletpassword : perform success!
+16-06-15 15:32:37.302 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/withdraw : perform success!
+16-06-15 15:32:37.306 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/aminitdata : perform success!
+16-06-15 15:32:37.314 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/historyorder : perform success!
+16-06-15 15:32:37.315 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/companybalance : perform success!
+16-06-15 15:32:37.316 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newwalletpassword : perform success!
+16-06-15 15:32:37.317 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/soudoucostlist : perform success!
+16-06-15 15:32:37.327 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateorderstatus : perform success!
+16-06-15 15:32:37.337 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/buyercommunicate : perform success!
+16-06-15 15:32:37.368 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateBiddocNotifySwitch : perform success!
+16-06-15 15:32:37.376 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/friend_info : perform success!
+16-06-15 15:32:37.602 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/communicate_by_chatcode : perform success!
+16-06-15 15:32:37.770 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updatesellerpassword : perform success!
+16-06-15 15:32:37.857 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/initordercenter : perform success!
+16-06-15 15:32:37.868 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newBiddocs : perform success!
+16-06-15 15:32:38.073 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/commuBiddocs : perform success!
+16-06-15 15:32:38.074 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 回归测试结束！
+16-06-15 15:34:29.616 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆成功！
+16-06-15 15:34:29.637 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:34:29.639 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{ code: 0,
+  message: '[LOGIN] OK',
+  result: 
+   { account_id: 3969554632050000,
+     user_access_token: 'Bearer b0743444777342afe3ed90b4027fa918f6a5f2d2',
+     access_token_lifetime: 43200,
+     user_refresh_token: 'Bearer 387451a32edb29c329fe86a52afbd131ba8fad0b',
+     registerState: 'ok',
+     directory_url: 'http://seller.sosoqipei.com/main/index.html#/order' } }
+16-06-15 15:34:29.850 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/companybalance : perform success!
+16-06-15 15:34:29.855 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/aminitdata : perform success!
+16-06-15 15:34:29.859 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/getBiddocWxNotifySwitch : perform success!
+16-06-15 15:34:29.866 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/close_chat : perform success!
+16-06-15 15:34:29.868 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newwalletpassword : perform success!
+16-06-15 15:34:29.869 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/withdraw : perform success!
+16-06-15 15:34:29.873 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/setwalletpassword : perform success!
+16-06-15 15:34:29.875 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/historyorder : perform success!
+16-06-15 15:34:29.889 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/gettradingorders : perform success!
+16-06-15 15:34:29.890 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/soudoucostlist : perform success!
+16-06-15 15:34:29.890 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/passwordcheck : perform success!
+16-06-15 15:34:29.891 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateBiddocNotifySwitch : perform success!
+16-06-15 15:34:29.892 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/biddocInfo : perform success!
+16-06-15 15:34:29.893 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/walletpaylist : perform success!
+16-06-15 15:34:29.897 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_order_info : perform success!
+16-06-15 15:34:29.898 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_partners : perform success!
+16-06-15 15:34:29.900 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/friend_info : perform success!
+16-06-15 15:34:29.911 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateorderstatus : perform success!
+16-06-15 15:34:29.979 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/buyercommunicate : perform success!
+16-06-15 15:34:30.134 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/communicate_by_chatcode : perform success!
+16-06-15 15:34:30.347 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/upadate_company_info : perform success!
+16-06-15 15:34:30.368 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updatesellerpassword : perform success!
+16-06-15 15:34:30.453 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/initordercenter : perform success!
+16-06-15 15:34:30.483 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newBiddocs : perform success!
+16-06-15 15:34:30.593 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/commuBiddocs : perform success!
+16-06-15 15:34:30.594 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 回归测试结束！
+16-06-15 15:34:30.779 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 退出系统错误：{ code: 120004,
+  message: '[LOGIN] Malformed auth header,access or refresh token is malformed.',
+  stack: 'Malformed auth header,token is empty.' }
+16-06-15 15:37:47.336 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆成功！
+16-06-15 15:37:47.349 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:37:47.350 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{ code: 0,
+  message: '[LOGIN] OK',
+  result: 
+   { account_id: 3969554632050000,
+     user_access_token: 'Bearer 6eebc12c29cebeeadb2a21f951030ccf2bbb2028',
+     access_token_lifetime: 43200,
+     user_refresh_token: 'Bearer 678c5d1a29b0719ee49120634856a4a66799b818',
+     registerState: 'ok',
+     directory_url: 'http://seller.sosoqipei.com/main/index.html#/order' } }
+16-06-15 15:37:47.542 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateBiddocNotifySwitch : perform success!
+16-06-15 15:37:47.553 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/aminitdata : perform success!
+16-06-15 15:37:47.555 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/getBiddocWxNotifySwitch : perform success!
+16-06-15 15:37:47.558 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/companybalance : perform success!
+16-06-15 15:37:47.559 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/historyorder : perform success!
+16-06-15 15:37:47.561 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newwalletpassword : perform success!
+16-06-15 15:37:47.568 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/walletpaylist : perform success!
+16-06-15 15:37:47.571 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/close_chat : perform success!
+16-06-15 15:37:47.582 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/setwalletpassword : perform success!
+16-06-15 15:37:47.587 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_order_info : perform success!
+16-06-15 15:37:47.588 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_partners : perform success!
+16-06-15 15:37:47.603 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/soudoucostlist : perform success!
+16-06-15 15:37:47.604 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/biddocInfo : perform success!
+16-06-15 15:37:47.610 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/gettradingorders : perform success!
+16-06-15 15:37:47.611 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/withdraw : perform success!
+16-06-15 15:37:47.640 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateorderstatus : perform success!
+16-06-15 15:37:47.704 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/buyercommunicate : perform success!
+16-06-15 15:37:47.751 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/friend_info : perform success!
+16-06-15 15:37:47.754 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/passwordcheck : perform success!
+16-06-15 15:37:47.859 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/communicate_by_chatcode : perform success!
+16-06-15 15:37:48.093 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updatesellerpassword : perform success!
+16-06-15 15:37:48.095 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/upadate_company_info : perform success!
+16-06-15 15:37:48.176 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/initordercenter : perform success!
+16-06-15 15:37:48.200 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newBiddocs : perform success!
+16-06-15 15:37:48.329 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/commuBiddocs : perform success!
+16-06-15 15:37:48.331 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 回归测试结束！
+16-06-15 15:37:48.455 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 退出系统错误：{ code: 120004,
+  message: '[LOGIN] Malformed auth header,access or refresh token is malformed.',
+  stack: 'Malformed auth header,token is empty.' }
+16-06-15 15:38:38.439 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆成功！
+16-06-15 15:38:38.457 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:38:38.458 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{ code: 0,
+  message: '[LOGIN] OK',
+  result: 
+   { account_id: 3969554632050000,
+     user_access_token: 'Bearer 5589a3f06dcc921cc6d107fed86e859cfe7dc273',
+     access_token_lifetime: 43200,
+     user_refresh_token: 'Bearer b4b794a2cf5b71e6db0fccdcaf21fa0d42fae301',
+     registerState: 'ok',
+     directory_url: 'http://seller.sosoqipei.com/main/index.html#/order' } }
+16-06-15 15:38:38.661 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/aminitdata : perform success!
+16-06-15 15:38:38.670 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/getBiddocWxNotifySwitch : perform success!
+16-06-15 15:38:38.674 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/historyorder : perform success!
+16-06-15 15:38:38.692 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/biddocInfo : perform success!
+16-06-15 15:38:38.701 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/walletpaylist : perform success!
+16-06-15 15:38:38.703 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/gettradingorders : perform success!
+16-06-15 15:38:38.717 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateBiddocNotifySwitch : perform success!
+16-06-15 15:38:38.723 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/close_chat : perform success!
+16-06-15 15:38:38.737 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/companybalance : perform success!
+16-06-15 15:38:38.739 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/passwordcheck : perform success!
+16-06-15 15:38:38.749 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/soudoucostlist : perform success!
+16-06-15 15:38:38.751 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/friend_info : perform success!
+16-06-15 15:38:38.753 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/withdraw : perform success!
+16-06-15 15:38:38.755 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newwalletpassword : perform success!
+16-06-15 15:38:38.757 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_partners : perform success!
+16-06-15 15:38:38.760 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_order_info : perform success!
+16-06-15 15:38:38.763 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/setwalletpassword : perform success!
+16-06-15 15:38:38.775 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateorderstatus : perform success!
+16-06-15 15:38:38.858 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/buyercommunicate : perform success!
+16-06-15 15:38:39.033 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/communicate_by_chatcode : perform success!
+16-06-15 15:38:39.206 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/upadate_company_info : perform success!
+16-06-15 15:38:39.210 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updatesellerpassword : perform success!
+16-06-15 15:38:39.261 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newBiddocs : perform success!
+16-06-15 15:38:39.274 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/initordercenter : perform success!
+16-06-15 15:38:39.317 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/commuBiddocs : perform success!
+16-06-15 15:38:39.323 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 回归测试结束！
+16-06-15 15:38:39.460 0 ERROR [car2go_seller_regressionTesting\test\seller_api_testing.js] 退出系统错误：{ code: 120004,
+  message: '[LOGIN] Malformed auth header,access or refresh token is malformed.',
+  stack: 'Malformed auth header,token is empty.' }
+16-06-15 15:38:47.615 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆成功！
+16-06-15 15:38:47.648 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆数据：{ userName: '15940852981', password: 'xinnian1', sign_code: '' }
+16-06-15 15:38:47.649 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 模拟登陆返回数据：
+{ code: 0,
+  message: '[LOGIN] OK',
+  result: 
+   { account_id: 3969554632050000,
+     user_access_token: 'Bearer 078ee163aa0af7abbfa0f561b7055b0fcc74598e',
+     access_token_lifetime: 43200,
+     user_refresh_token: 'Bearer 3207d2a0e180cfe3a7e2e0cf91734bb9b874d760',
+     registerState: 'ok',
+     directory_url: 'http://seller.sosoqipei.com/main/index.html#/order' } }
+16-06-15 15:38:47.861 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateBiddocNotifySwitch : perform success!
+16-06-15 15:38:47.867 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/aminitdata : perform success!
+16-06-15 15:38:47.872 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newwalletpassword : perform success!
+16-06-15 15:38:47.880 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/gettradingorders : perform success!
+16-06-15 15:38:47.883 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/upadate_company_info : perform success!
+16-06-15 15:38:47.895 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/getBiddocWxNotifySwitch : perform success!
+16-06-15 15:38:47.904 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/close_chat : perform success!
+16-06-15 15:38:47.913 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/setwalletpassword : perform success!
+16-06-15 15:38:47.914 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updateorderstatus : perform success!
+16-06-15 15:38:47.994 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/biddocInfo : perform success!
+16-06-15 15:38:47.995 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/friend_info : perform success!
+16-06-15 15:38:47.996 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/walletpaylist : perform success!
+16-06-15 15:38:47.996 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/withdraw : perform success!
+16-06-15 15:38:47.997 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/historyorder : perform success!
+16-06-15 15:38:47.997 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/companybalance : perform success!
+16-06-15 15:38:47.998 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_partners : perform success!
+16-06-15 15:38:47.998 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/passwordcheck : perform success!
+16-06-15 15:38:47.999 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/get_order_info : perform success!
+16-06-15 15:38:48.000 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/soudoucostlist : perform success!
+16-06-15 15:38:48.001 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/buyercommunicate : perform success!
+16-06-15 15:38:48.277 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/communicate_by_chatcode : perform success!
+16-06-15 15:38:48.436 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/updatesellerpassword : perform success!
+16-06-15 15:38:48.509 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/initordercenter : perform success!
+16-06-15 15:38:48.591 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/newBiddocs : perform success!
+16-06-15 15:38:48.633 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] *  /api/seller/v1.0/commuBiddocs : perform success!
+16-06-15 15:38:48.634 0 DEBUG [car2go_seller_regressionTesting\test\seller_api_testing.js] 回归测试结束！

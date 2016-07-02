@@ -1,0 +1,7 @@
+{
+    "api_url" : "/api/seller/v1.0/friend_info",
+    "query" : "buyer_company_id=12903108523050002",
+    "req_method" : "GET",
+    "req_body" : {},
+    "res_body" : {"code":0,"message":"ok","result":{"favdealinfo":{"recDealCount":14,"recDealMoney":160.33,"hisDealCount":2,"hisDealMoney":0.2},"companyinfo":{"org_id":"12903108523050002","org_name":"........................","org_contact":".........","org_contact_tel":"15940852981","org_province":440000,"org_province_name":".........","org_city":440100,"org_city_name":".........","org_county":440106,"org_county_name":".........","org_address":".........","org_license_photo":"uploads/buyer/photo1-1451305583790.jpeg","org_main_photo":"uploads/buyer/photo2-1451305583792.jpeg","org_commercial_code":null,"org_comment":"","org_admin_phone":"15942445502","status":2,"org_circle_id":null,"directory_id":1,"scope_id":null,"scope_brand_factory":0,"scope_sub_str":"","recommend_str":"","invite_id":0,"org_group_str":"","org_profile":null,"create_time":"2015-12-28 20:24:01"}}}
+}

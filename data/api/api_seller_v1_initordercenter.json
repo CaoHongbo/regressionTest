@@ -1,0 +1,7 @@
+{
+  "api_url" : "/api/seller/v1.0/initordercenter",
+  "query" : "",
+  "req_method" : "GET",
+  "req_body" : {},
+  "res_body" : {"code":0,"message":"ok","result":{"initData":{"curUserId":3969554632050000,"companyInfo":{"org_id":3969627305050002,"org_name":"贾斯汀测试","org_contact":"嘉瑞","org_contact_tel":"15940852981","org_province":440000,"org_province_name":"广东省","org_city":440100,"org_city_name":"广州市","org_county":440104,"org_county_name":"越秀区","org_address":"中山","org_license_photo":"profile/seller/3969554632050000/licensephoto_1464065068518.jpeg","org_main_photo":"profile/seller/3969554632050000/mainphoto_1464065063221.jpeg","org_commercial_code":null,"org_comment":"","org_admin_phone":"15940852981","status":2,"org_circle_id":null,"directory_id":2,"scope_id":"101","scope_brand_factory":2,"scope_sub_str":"110201","recommend_str":"","invite_id":0,"org_group_str":"","org_profile":"hello.........","create_time":"2015-09-16 10:52:40"},"SumBiddocs":{"sum":0},"isCompanyAdmin":1,"SumTodayPipeiBiddocs":{"sum":1}}}}
+}

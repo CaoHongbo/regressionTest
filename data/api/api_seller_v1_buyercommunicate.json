@@ -1,0 +1,7 @@
+{
+    "api_url" : "/api/seller/v1.0/buyercommunicate",
+    "query" : "",
+    "req_method" : "POST",
+    "req_body" : {"biddoc_id":"26385642682450001"},
+    "res_body" : {"code":0,"message":"ok","result":{"commuBiddocInfo":{"bid_id":"26385647767250000","biddoc_id":"26385642682450001","seller_id":3969554632050000,"chat_code":"139521464787980526","update_time":"2016-06-01T13:33:00.000Z","isdeleted":0,"company_id":3969627305050002,"buyer_id":7182341014050000,"biddoc_note":"","scope_id":101,"scope_name":".........","brand_id":1102,"brand_name":"...............","buyer_name":"18600952358","buyer_company_id":"11778764465050002","buyer_company_name":"............1215","buyer_photo_url":"uploads/buyer/1-1451131832166.jpeg","factory_id":110201,"factory_name":"...............","model_id":110201009,"model_name":"......Virage","area_id":440204,"area_name":"......... ......... .........","isaccident":1,"creater_id":7182341014050000,"VIN":"","publish_time":"2016-06-01T13:32:55.000Z","part_name_str":"............","place_id":"26385667717250000","isPartner":1}}}
+}

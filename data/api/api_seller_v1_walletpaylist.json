@@ -1,0 +1,7 @@
+{
+    "api_url" : "/api/seller/v1.0/walletpaylist",
+    "query" : "",
+    "req_method" : "POST",
+    "req_body" : {"searchMonth":"2016-06","pagestart":0,"perpage":20},
+    "res_body" : {"code":0,"message":"ok","result":{"walletpaylist":[{"trade_id":"27092872960500000","trade_type":4,"pay_company_name":"........................","receive_company_name":"...............","trade_money":0.1,"channel":"null","record_opt_balance":0.2,"rollback_flag":1,"updatetime":"2016-06-09T18:00:05.000Z"},{"trade_id":"27092868059500000","trade_type":4,"pay_company_name":"........................","receive_company_name":"...............","trade_money":0.1,"channel":"null","record_opt_balance":0.1,"rollback_flag":1,"updatetime":"2016-06-09T18:00:00.000Z"},{"trade_id":"26382943927500000","trade_type":2,"pay_company_name":"...............","receive_company_name":"null","trade_money":1.94,"channel":"wechat","record_opt_balance":0,"rollback_flag":1,"updatetime":"2016-06-01T12:47:56.000Z"},{"trade_id":"26381868245500000","trade_type":4,"pay_company_name":"........................","receive_company_name":"...............","trade_money":0.97,"channel":"null","record_opt_balance":1.94,"rollback_flag":1,"updatetime":"2016-06-01T12:30:01.000Z"},{"trade_id":"26380487569500000","trade_type":4,"pay_company_name":"........................","receive_company_name":"...............","trade_money":0.97,"channel":"null","record_opt_balance":0.97,"rollback_flag":1,"updatetime":"2016-06-01T12:07:00.000Z"}]}}
+}

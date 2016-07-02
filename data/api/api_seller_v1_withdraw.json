@@ -1,0 +1,7 @@
+{
+    "api_url" : "/api/seller/v1.0/withdraw",
+    "query" : "",
+    "req_method" : "GET",
+    "req_body" : {},
+    "res_body" : {"code":0,"message":"[Seller] OK","result":{"open_id":"ohdciuDBQ2LyNj0NORubHqaA7otI","walletbalance":0.2,"passwordFlag":1}}
+}
