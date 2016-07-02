@@ -1,0 +1,22 @@
+GET http://203.195.244.28:15000/api/buyer/v2.0/logout HTTP/1.1
+Host: 203.195.244.28:15000
+Origin: http://bidder.sosoqipei.com
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Connection: keep-alive
+Accept: application/json, text/plain, */*
+User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13E238 MicroMessenger/6.3.22 NetType/WIFI Language/zh_CN
+Authorization: Bearer acd8a3b6d083534d1873fa40799a0f5dec6090c5
+Referer: http://bidder.sosoqipei.com/main/index.html
+Accept-Language: zh-cn
+
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 45
+Access-Control-Allow-Origin: http://bidder.sosoqipei.com
+Access-Control-Expose-Headers: api-version, content-length, content-md5, content-type, date, request-id, response-time
+Date: Sat, 02 Jul 2016 08:51:56 GMT
+Connection: keep-alive
+
+{"code":0,"message":"[BUYER] OK","result":{}}

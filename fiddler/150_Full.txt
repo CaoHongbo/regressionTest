@@ -1,0 +1,27 @@
+POST http://203.195.244.28:17000/api/login/v2.0/buyer/login HTTP/1.1
+Host: 203.195.244.28:17000
+Connection: keep-alive
+Content-Length: 67
+Accept: application/json, text/plain, */*
+Origin: http://bidder.sosoqipei.com
+Authorization: Bearer b7aa0c81a37a0ea1f19ff180c4e6723085b493e4
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+Content-Type: application/json;charset=UTF-8
+DNT: 1
+Referer: http://bidder.sosoqipei.com/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.8
+
+{"userName":"18642638455","password":"12345678","sign_code":"null"}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST
+Access-Control-Allow-Headers: X-Requested-With,content-type, Authorization
+Content-Type: application/json; charset=utf-8
+Content-Length: 513
+ETag: W/"201-3C8QBDxPzwXRH9e/dRr1bQ"
+Date: Sat, 02 Jul 2016 07:50:07 GMT
+Connection: keep-alive
+
+{"code":0,"message":"[LOGIN] OK","result":{"account_id":5002783195050000,"user_access_token":"Bearer 59232a3bf51883d69252f5577dfe970fce4f937f","access_token_lifetime":43200,"user_refresh_token":"Bearer 06726d0958a5832310f487b30d0ea683cb3f8bb6","registerState":"ok","directory_url":"http://bidder.sosoqipei.com/main/index.html#/loading?user_access_token=Bearer 59232a3bf51883d69252f5577dfe970fce4f937f&user_refresh_token=Bearer 06726d0958a5832310f487b30d0ea683cb3f8bb6&account_id=5002783195050000&sign_code=null"}}
