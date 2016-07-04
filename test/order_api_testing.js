@@ -25,7 +25,7 @@ var sellerResBody;      //卖家模拟登陆返回的数据
 var buyerResBody;       //买家模拟登陆返回的数据
 // 模拟退出相关的数据
 var sellerLogoutReq = supertest.agent('http://' + sellerLogout.req_header.Host);
-var buyerLogoutReq = supertest.agent('http://' + buyerLoginReq.req_header.Host);
+var buyerLogoutReq = supertest.agent('http://' + buyerLogout.req_header.Host);
 // 标书ID
 var biddocID;
 
@@ -51,9 +51,9 @@ describe('买家、卖家模拟发单抢单流程', function () {
 
     //买家模拟登陆
     before(function (done) {
-        buyerLogoutReq[buyerLogin.req_method.toLocaleLowerCase()](buyerLogin.api_url)
+        buyerLoginReq[buyerLogin.req_method.toLocaleLowerCase()](buyerLogin.api_url)
             .set(buyerLogin.req_header)
-            .send(sellerLogin.req_body)
+            .send(buyerLogin.req_body)
             .expect(200)
             .end(function (err, res) {
                 if (err) {
@@ -91,6 +91,7 @@ describe('买家、卖家模拟发单抢单流程', function () {
             .expect(200)
             .end(function (err, res) {
                 should.not.exist(err, 'supertest访问出错，访问接口错误！');
+                should.equal(res.body.code, publish.res_body.code, res.body.message);
                 assertData(publish.res_body, res.body, publish.api_url, function () {
                     biddocID = res.body.result.biddoc_id;   //biddocID
                     done();
