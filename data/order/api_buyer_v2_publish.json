@@ -1,0 +1,9 @@
+{
+  "api_url" : "/api/buyer/v2.0/publish",
+  "query" : "",
+  "req_method" : "POST",
+  "req_body" : {"scope_id":"101","scope_name":"全车件","brand_id":"1102","brand_name":"阿斯顿马丁","brand_logo_url":"asidunmading","factory_id":"110201","factory_name":"阿斯顿马丁","model_id":"110201006","model_name":"进口Rapide","isaccident":"normal","require_note":"回归测试发单","VIN":"23838389399292929","parts":[{"part_id":"P120009","part_parent_id":"P120","part_name":"车顶后窗帘气囊组件"}]},
+  "res_body" : {"code":0,"message":"[BUYER] OK","result":{"biddoc_id":"29026629087450001","publish_time":"2016-07-02 11:09:21"}}
+}
+
+

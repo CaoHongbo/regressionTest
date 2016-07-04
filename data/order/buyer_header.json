@@ -1,0 +1,11 @@
+{
+  "Host" : "203.195.244.28:15000",
+  "Connection" : "keep-alive",
+  "Accept" : "application/json, text/plain, */*",
+  "Origin" : "http://bidder.sosoqipei.com",
+  "User-Agent" : "Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13E238 MicroMessenger/6.3.22 NetType/WIFI Language/zh_CN",
+  "Referer" : "http://bidder.sosoqipei.com/main/index.html",
+  "Accept-Encoding" : "gzip, deflate",
+  "Accept-Language" : "zh-CN"
+}
+
