@@ -11,16 +11,24 @@ const should = require('should');
 const eventproxy = require('eventproxy');
 const sellerLogin = require('../data/sellerLogin.json');
 const sellerLogout = require('../data/sellerLogout.json');
-const req_header = require('../data/common.json');
+const buyerLogin = require('../data/buyerLogin');
+const buyerLogout = require('../data/buyerLogout');
+const sellerHeader = require('../data/seller_header.json');
+const buyerHeader = require('../data/buyer_header.json');
 
 // 模拟登陆相关的数据
-var sellerLoginReq = supertest.agent('http://' + sellerLogin.req_header.Host);     //sellerLoginReq对象
-var sellerResBody;      //模拟登陆返回的数据
+var sellerLoginReq = supertest.agent('http://' + sellerLogin.req_header.Host);
+var buyerLoginReq = supertest.agent('http://' + buyerLogin.req_header.Host);
 // 模拟退出相关的数据
-var sellerLogoutReq = supertest.agent('http://' + sellerLogout.req_header.Host);    //sellerLogoutReq对象
+var sellerLogoutReq = supertest.agent('http://' + sellerLogout.req_header.Host);
+var buyerLogoutReq = supertest.agent('http://' + buyerLogout.req_header.Host);
 
 var path = __dirname + '/../data/api/';
 var arrayDatas = [];
+// 标书ID
+var biddocID;
+var sellerResBody;
+var buyerResBody;
 
 //mocha框架
 describe('回归测试',function(){
@@ -46,21 +54,37 @@ describe('回归测试',function(){
         });
     });
 
-    //模拟登陆
-    before(function(done){
+    //卖家模拟登陆
+    before(function (done) {
         sellerLoginReq[sellerLogin.req_method.toLocaleLowerCase()](sellerLogin.api_url)
             .set(sellerLogin.req_header)
             .send(sellerLogin.req_body)
             .expect(200)
-            // .timeout(10000)
-            .end(function(err,res){
+            .end(function (err, res) {
                 if (err) {
                     logger.error('supertest内部错误，error:' + err);
                     return done(err);
                 }
 
                 sellerResBody = res.body;
-                return done();
+                done();
+            });
+    });
+
+    //买家模拟登陆
+    before(function (done) {
+        buyerLoginReq[buyerLogin.req_method.toLocaleLowerCase()](buyerLogin.api_url)
+            .set(buyerLogin.req_header)
+            .send(buyerLogin.req_body)
+            .expect(200)
+            .end(function (err, res) {
+                if (err) {
+                    logger.error('supertest内部错误，error:' + err);
+                    return done(err);
+                }
+
+                buyerResBody = res.body;
+                done();
             });
     });
 
@@ -74,26 +98,21 @@ describe('回归测试',function(){
         done();
     });
 
-    it('模拟登陆成功', function(done){
-        try{
-            should.exist(sellerResBody, '没有获取到token');
-            should.equal(sellerResBody['code'], 0, '模拟登陆失败!');
-        }catch(err){
+    it('买家、卖家模拟登陆成功', function (done) {
+        try {
+            should.equal(sellerResBody['code'], 0, '卖家模拟登陆失败!');
+            should.equal(buyerResBody['code'], 0, '买家模拟登陆失败!');
+        } catch (err) {
             logger.error('模拟登陆失败！');
-            logger.error('模拟登陆数据：' + util.inspect(sellerLogin.req_body));
-            if(typeof(sellerResBody) == 'undefined')
-                logger.error('supertest出错，没有获取到token');
-            else
-                logger.error('模拟登陆返回数据：\n' + util.inspect(sellerResBody));
+            logger.error('seller登录返回信息：' + util.inspect(sellerResBody));
+            logger.error('buyer登录返回信息：' + util.inspect(buyerResBody));
             return done(err);
         }
-        logger.debug('模拟登陆成功！');
-        logger.debug('模拟登陆数据：' + util.inspect(sellerLogin.req_body));
-        logger.debug('模拟登陆返回数据：\n' + util.inspect(sellerResBody));
+        logger.debug('买家、卖家模拟登陆成功！');
         done();
     });
 
-    it('API回归测试全部成功',function(done){
+    it('卖家请求API测试成功',function(done){
 
         var ep = eventproxy.create();
         ep.after('done', arrayDatas.length, function(result){
@@ -103,12 +122,12 @@ describe('回归测试',function(){
 
         arrayDatas.forEach(function(member){
 
-            var request = supertest.agent('http://' + req_header.Host);
-            req_header['Authorization'] = sellerResBody.result.user_access_token;    //身份验证token写入即将发送的req_header里面
+            var request = supertest.agent('http://' + sellerHeader.Host);
+            sellerHeader['Authorization'] = sellerResBody.result.user_access_token;    //身份验证token写入即将发送的header里面
 
             //发送请求
             request[member.req_method.toLocaleLowerCase()](member.api_url)
-                .set(req_header)
+                .set(sellerHeader)
                 .query(member.query)
                 .send(member.req_body)
                 .expect(200)
@@ -141,28 +160,35 @@ describe('回归测试',function(){
     });
 
     it("上传图片接口测试全部成功", function(done){
-        done();
+        done();     //TODO  上传图片
     });
 
+    it('TODO', function (done) {
+        done();     //TODO 流程
+    });
 
-    it("成功退出系统", function(done){
+    it("卖家成功退出系统", function (done) {
         sellerLogout.req_header['Authorization'] = sellerResBody.result.user_access_token;     //token写到头里面
 
         sellerLogoutReq[sellerLogout.req_method.toLocaleLowerCase()](sellerLogout.api_url)
             .set(sellerLogout.req_header)
             .expect(200)
-            .end(function(err, res){
-                try{
-                    should.not.exist(err);
-                    should(res.body.code).equal(0);
-                }catch(error){
-                    if(err)
-                        logger.error("退出系统错误：" + util.inspect(err));
-                    else
-                        logger.error("退出系统错误：" + util.inspect(res.body));
+            .end(function (err, res) {
+                should.not.exist(err, "卖家退出系统错误：" + util.inspect(err));
+                should.equal(sellerLogout.res_body.code, res.body.code, "卖家退出系统错误：" + util.inspect(res.body));
+                done();
+            });
+    });
 
-                    return done(error);
-                }
+    it("买家成功退出系统", function (done) {
+        buyerLogout.req_header['Authorization'] = buyerResBody.result.user_access_token;     //token写到头里面
+
+        buyerLogoutReq[buyerLogout.req_method.toLocaleLowerCase()](buyerLogout.api_url)
+            .set(buyerLogout.req_header)
+            .expect(200)
+            .end(function (err, res) {
+                should.not.exist(err, "买家退出系统错误：" + util.inspect(err));
+                should.equal(buyerLogout.res_body.code, res.body.code, "买家退出系统错误：" + util.inspect(res.body));
                 done();
             });
     });
