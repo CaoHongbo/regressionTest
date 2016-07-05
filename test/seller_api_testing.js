@@ -1,4 +1,3 @@
-
 //  *created by Leechee 2016-06-03
 //  *该模块实现了mocha框架的测试
 //  *mocha npm address：https://www.npmjs.com/package/node-schedule
@@ -26,17 +25,18 @@ var buyerLogoutReq = supertest.agent('http://' + buyerLogout.req_header.Host);
 
 var path = __dirname + '/../data/api/';
 var arrayDatas = [];
+var picPath = __dirname + '/../data/pic/';
+var picArr = [];
 // 标书ID
 var biddocID;
 var sellerResBody;
 var buyerResBody;
-var rushData;   //抢单成功后获取的数据
 
 //mocha框架
-describe('回归测试',function(){
+describe('回归测试', function () {
 
     //收集数据
-    before(function(done){
+    before(function (done) {
         fs.readdir(path, function (err, files) {
             if (err) {
                 logger.error('fs.readdir, error:' + err);
@@ -55,6 +55,28 @@ describe('回归测试',function(){
             done();
         });
     });
+
+    //图片数据
+    before(function (done) {
+        fs.readdir(picPath, function (err, files) {
+            if (err) {
+                logger.error('fs.readdir, error:' + err);
+                return done(err);
+            }
+
+            if (files.length == 0) {
+                logger.error('数据缺失，没有相关数据可以用来测试！');
+                return done();
+            }
+
+            files.forEach(function (file) {
+                var data = require(picPath + file);
+                picArr.push(data);
+            });
+            done();
+        });
+    });
+
 
     //卖家模拟登陆
     before(function (done) {
@@ -90,10 +112,11 @@ describe('回归测试',function(){
             });
     });
 
-    it('测试数据准备完毕', function(done){
-        try{
+    it('测试数据准备完毕', function (done) {
+        try {
             should.notEqual(arrayDatas.length, 0, '数据错误');
-        }catch(err){
+            should.notEqual(picArr.length, 0, '图片相关数据错误');
+        } catch (err) {
             logger.error('缺失测试数据');
             return done(err);    //done回调，并把错误传给mocha来处理
         }
@@ -114,15 +137,15 @@ describe('回归测试',function(){
         done();
     });
 
-    it('卖家请求API测试成功',function(done){
+    it('卖家请求API测试成功', function (done) {
 
         var ep = eventproxy.create();
-        ep.after('done', arrayDatas.length, function(result){
+        ep.after('done', arrayDatas.length, function (result) {
             logger.debug('回归测试结束！');
             done();
         });
 
-        arrayDatas.forEach(function(member){
+        arrayDatas.forEach(function (member) {
 
             var request = supertest.agent('http://' + sellerHeader.Host);
             sellerHeader['Authorization'] = sellerResBody.result.user_access_token;    //身份验证token写入即将发送的header里面
@@ -135,21 +158,21 @@ describe('回归测试',function(){
                 .expect(200)
                 .redirects(0)   //禁止重定向
                 // .timeout(10000)
-                .end(function(err,res){
-                    if(err){
+                .end(function (err, res) {
+                    if (err) {
                         logger.error(member.api_url + ' request,error:' + util.inspect(err));
                         should.not.exist(err, member.api_url + ' request,error:');
                         // ep.emit('done', err);
-                    }else{
-                        if(res.body['code'] == member.res_body['code']) {
+                    } else {
+                        if (res.body['code'] == member.res_body['code']) {
                             // data assertion
-                            assertData(member.res_body['result'], res.body['result'], member.api_url, function(){
+                            assertData(member.res_body['result'], res.body['result'], member.api_url, function () {
                                 logger.debug('*  ' + member.api_url + ' : perform success!');
                                 ep.emit('done', res.body);
                             });
-                        }else{
+                        } else {
                             logger.error('!  ' + member.api_url + ' : failed!\nreason : ' + util.inspect(res.body));
-                            
+
                             res.body['code'].should.be.equal(member.res_body['code']);
                             res.body['message'].should.be.equal(member.res_body['message']);
 
@@ -247,8 +270,31 @@ describe('回归测试',function(){
             });
     });
 
-    it("上传图片接口测试全部成功", function(done){
-        done();     //TODO  上传图片
+    it("上传图片接口测试全部成功", function (done) {
+
+        var ep = eventproxy.create();
+        ep.after('done', picArr.length, function (result) {
+            logger.debug('上传图片接口测试完成！');
+            done();
+        });
+
+        picArr.forEach(function (member) {
+
+            var request = supertest.agent('http://' + member.req_header.Host);
+            member.req_header['Authorization'] = sellerResBody.result.user_access_token;    //身份验证token写入即将发送的header里面
+
+            //发送请求
+            request['post'](member.api_url)
+                .set(member.req_header)
+                .attach('companyMainPhoto', __dirname + '/../data/test.jpg')
+                .expect(200)
+                .redirects(0)
+                .end(function (err, res) {
+                    should.not.exist(err, 'supertest出错：' + util.inspect(err));
+                    should.equal(member.res_body.code, res.body.code, 'err:' + util.inspect(res.body));
+                    ep.emit('done', res.body);
+                });
+        });
     });
 
     it("卖家成功退出系统", function (done) {
