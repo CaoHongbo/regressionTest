@@ -1,0 +1,9 @@
+{
+  "api_url" : "/api/seller/v1.0/neworder",
+  "query" : "",
+  "req_method" : "POST",
+  "req_body" : {"place_id":null,"biddoc_type":1,"order_type":1,"status_flag":"CREATE","bid_id":"","biddoc_id":"","biddoc_note":"回归测试发单","scope_id":101,"scope_name":"全车件","factory_id":110201,"factory_name":"阿斯顿马丁","model_id":110201006,"model_name":"进口Rapide","vin":"23838389399292929","chat_code":"","buyer_company_id":"11778764465050002","buyer_company_name":"大连测试1215","buyer_id":7182341014050000,"buyer_contact_tel":"18666666666","buyer_contact_name":"无，测试而已","buyer_company_provience":"辽宁省","buyer_company_city":"大连市","buyer_company_county":"甘井子区","buyer_company_address":"理工大学","seller_contact_tel":"15940852981","seller_contact_name":"嘉瑞","seller_company_provience":"广东省","seller_company_city":"广州市","seller_company_county":"越秀区","seller_company_address":"中山","logistics_type":"pick_up","logistics_money":0,"order_money":0.1,"total_money":0.1,"parts":"[{\"part_id\":\"P120009\",\"part_name\":\"回归测试\",\"$$hashKey\":\"object:431\",\"part_brand_type\":\"原厂\",\"remark\":\"\",\"part_brand_name\":\"测试\",\"unit_price\":\"0.1\",\"number\":\"1\",\"subtotal\":0.1}]"},
+  "res_body" : {"code":0,"message":"ok","result":{"order_info_id":"29306446234500000","purchase_order_id":"29306446234500001"}}
+}
+
+

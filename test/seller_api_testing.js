@@ -5,7 +5,7 @@
 
 const util = require('util');
 const fs = require('fs');
-const logger = require('./../winston-ext').car2gologger(__filename);
+const logger = require('swishlog').logger(__filename);
 const supertest = require('supertest');
 const should = require('should');
 const eventproxy = require('eventproxy');
@@ -15,6 +15,7 @@ const buyerLogin = require('../data/buyerLogin');
 const buyerLogout = require('../data/buyerLogout');
 const sellerHeader = require('../data/seller_header.json');
 const buyerHeader = require('../data/buyer_header.json');
+const newOrder = require('../data/order/api_seller_v1_neworder');
 
 // 模拟登陆相关的数据
 var sellerLoginReq = supertest.agent('http://' + sellerLogin.req_header.Host);
@@ -29,6 +30,7 @@ var arrayDatas = [];
 var biddocID;
 var sellerResBody;
 var buyerResBody;
+var rushData;   //抢单成功后获取的数据
 
 //mocha框架
 describe('回归测试',function(){
@@ -207,19 +209,46 @@ describe('回归测试',function(){
 
                 //校验result中的数据类型是否和标准数据一致
                 assertData(sellerRush.res_body, res.body, sellerRush.api_url, function () {
+                    newOrder.req_body.bid_id = res.body.result.commuBiddocInfo.bid_id;
+                    newOrder.req_body.biddoc_id = res.body.result.commuBiddocInfo.biddoc_id;
+                    newOrder.req_body.chat_code = res.body.result.commuBiddocInfo.chat_code;
                     done();
                 });
 
             });
     });
 
+    it('给买家下单成功', function (done) {
+
+        should.exist(newOrder.req_body.bid_id, '无法给买家下单，bid_id不存在');
+        should.exist(newOrder.req_body.biddoc_id, '无法给买家下单，biddoc_id不存在');
+        should.exist(newOrder.req_body.chat_code, '无法给买家下单，chat_code不存在');
+
+        var request = supertest("http://" + sellerHeader.Host);
+        sellerHeader['Authorization'] = sellerResBody.result.user_access_token;
+
+        request[newOrder.req_method.toLocaleLowerCase()](newOrder.api_url)
+            .set(sellerHeader)
+            .send(newOrder.req_body)
+            .expect(200)
+            .end(function (err, res) {
+
+                //校验err是否存在
+                should.not.exist(err, 'supertest访问出错，访问接口错误！');
+
+                //校验code是否为0
+                should.equal(res.body.code, newOrder.res_body.code, res.body.message);
+
+                //校验result中的数据类型是否和标准数据一致
+                assertData(newOrder.res_body, res.body, newOrder.api_url, function () {
+                    done();
+                });
+
+            });
+    });
 
     it("上传图片接口测试全部成功", function(done){
         done();     //TODO  上传图片
-    });
-
-    it('TODO', function (done) {
-        done();     //TODO 流程
     });
 
     it("卖家成功退出系统", function (done) {
