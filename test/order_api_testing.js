@@ -4,11 +4,10 @@
 
 // npm
 const util = require('util');
-const fs = require('fs');
 const logger = require('./../winston-ext').car2gologger(__filename);
 const supertest = require('supertest');
 const should = require('should');
-const ep = require('eventproxy').create();
+const eventproxy = require('eventproxy');
 // module
 const sellerLogin = require('../data/sellerLogin');
 const sellerLogout = require('../data/sellerLogout');
@@ -90,13 +89,19 @@ describe('买家、卖家模拟发单抢单流程', function () {
             .send(publish.req_body)
             .expect(200)
             .end(function (err, res) {
+
+                //校验err是否存在
                 should.not.exist(err, 'supertest访问出错，访问接口错误！');
+
+                //校验code是否为0
                 should.equal(res.body.code, publish.res_body.code, res.body.message);
+
+                //校验result中的数据类型是否和标准数据一致
                 assertData(publish.res_body, res.body, publish.api_url, function () {
                     biddocID = res.body.result.biddoc_id;   //biddocID
                     done();
                 })
-            })
+            });
     });
 
     it('卖家抢单成功', function (done) {
@@ -113,20 +118,24 @@ describe('买家、卖家模拟发单抢单流程', function () {
             .send(sellerRush.req_body)
             .expect(200)
             .end(function (err, res) {
+
                 //校验err是否存在
                 should.not.exist(err, 'supertest访问出错，访问接口错误！');
+
                 //校验code是否为0
                 should.equal(res.body.code, sellerRush.res_body.code, res.body.message);
+
                 //校验result中的数据类型是否和标准数据一致
                 assertData(sellerRush.res_body, res.body, sellerRush.api_url, function () {
                     done();
                 });
+
             });
     });
 
     it('TODO', function (done) {
         //TODO
-        done({errCode:12345});
+        done();
     });
 
     it("卖家成功退出系统", function (done) {
@@ -179,23 +188,30 @@ describe('买家、卖家模拟发单抢单流程', function () {
 
 //数据属性校验
 function assertData(memResult, resResult, url, cb) {
-    var i = 0;
+
+    var ep = eventproxy.create();   // ep必须局部声明，不能使用外部的eventproxy对象
+    var i = 0;                      // after绑定事件所需的数据
+    for (var s in memResult) {
+        i++;
+    }
+
+    // after event bind
     ep.after('cb', i, function () {
         cb();
     });
+
+    // 数据校验
     for (var key in memResult) {
         if (Object.prototype.toString.call(memResult[key]) == '[object Object]') {
-            i++;
             assertData(memResult[key], resResult[key], url, function () {
                 ep.emit('cb');
             });
+        } else {
+            should.equal(typeof(memResult[key]), typeof(resResult[key]),
+                url + ' data error! expect:memResult[' + key + ']=' + memResult[key] + ' to' +
+                ' actual:resResult[' + key + ']=' + resResult[key]);
+            ep.emit('cb');
         }
-
-        // if(! (memResult[key] && resResult[key]))
-        // else
-        should.equal(typeof(memResult[key]), typeof(resResult[key]),
-            url + ' data error! expect:memResult[' + key + ']=' + memResult[key] + ' to ' +
-            ' actual:resResult[' + key + ']=' + resResult[key]);
     }
 }
 
