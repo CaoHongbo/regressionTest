@@ -159,6 +159,61 @@ describe('回归测试',function(){
 
     });
 
+    it('买家发单成功', function (done) {
+        var request = supertest("http://" + buyerHeader.Host);
+        var publish = require('../data/order/api_buyer_v2_publish');
+        buyerHeader['Authorization'] = buyerResBody.result.user_access_token;
+
+        request[publish.req_method.toLocaleLowerCase()](publish.api_url)
+            .set(buyerHeader)
+            .send(publish.req_body)
+            .expect(200)
+            .end(function (err, res) {
+
+                //校验err是否存在
+                should.not.exist(err, 'supertest访问出错，访问接口错误！');
+
+                //校验code是否为0
+                should.equal(res.body.code, publish.res_body.code, res.body.message);
+
+                //校验result中的数据类型是否和标准数据一致
+                assertData(publish.res_body, res.body, publish.api_url, function () {
+                    biddocID = res.body.result.biddoc_id;   //biddocID
+                    done();
+                })
+            });
+    });
+
+    it('卖家抢单成功', function (done) {
+
+        should.exist(biddocID, '买家发单失败，标书ID不存在');
+
+        var request = supertest("http://" + sellerHeader.Host);
+        var sellerRush = require('../data/order/api_seller_v1_sellerrush');
+        sellerRush.req_body.biddocId = biddocID;
+        sellerHeader['Authorization'] = sellerResBody.result.user_access_token;
+
+        request[sellerRush.req_method.toLocaleLowerCase()](sellerRush.api_url)
+            .set(sellerHeader)
+            .send(sellerRush.req_body)
+            .expect(200)
+            .end(function (err, res) {
+
+                //校验err是否存在
+                should.not.exist(err, 'supertest访问出错，访问接口错误！');
+
+                //校验code是否为0
+                should.equal(res.body.code, sellerRush.res_body.code, res.body.message);
+
+                //校验result中的数据类型是否和标准数据一致
+                assertData(sellerRush.res_body, res.body, sellerRush.api_url, function () {
+                    done();
+                });
+
+            });
+    });
+
+
     it("上传图片接口测试全部成功", function(done){
         done();     //TODO  上传图片
     });
