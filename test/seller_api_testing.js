@@ -286,7 +286,7 @@ describe('回归测试', function () {
             //发送请求
             request['post'](member.api_url)
                 .set(member.req_header)
-                .attach('companyMainPhoto', __dirname + '/../data/test.jpg')
+                .attach('companyMainPhoto', __dirname + '/../photo/test.jpg')       //attach图片
                 .expect(200)
                 .redirects(0)
                 .end(function (err, res) {
