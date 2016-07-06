@@ -1,6 +1,8 @@
-//  *created by Leechee 2016-06-03
-//  *该模块实现了mocha框架的测试
-//  *mocha npm address：https://www.npmjs.com/package/node-schedule
+/*
+ *created by Leechee 2016-06-03
+ *该模块实现了mocha框架的测试
+ *mocha npm address：https://www.npmjs.com/package/mocha
+ */
 
 const util = require('util');
 const fs = require('fs');
@@ -39,7 +41,7 @@ describe('回归测试', function () {
     before(function (done) {
         fs.readdir(path, function (err, files) {
             if (err) {
-                logger.error('fs.readdir, error:' + err);
+                logger.error('fs.readdir, error:' + util.inspect(err));
                 return done(err);
             }
 
@@ -329,7 +331,7 @@ describe('回归测试', function () {
 function assertData(memResult, resResult, url, cb) {
 
     var ep = eventproxy.create();   // ep必须局部声明，不能使用外部的eventproxy对象
-    var i = 0;                      // after绑定事件所需的数据
+    var i = 0;                      // after绑定事件所需
     for (var s in memResult) {
         i++;
     }
@@ -346,7 +348,7 @@ function assertData(memResult, resResult, url, cb) {
                 ep.emit('cb');
             });
         } else {
-            should.equal(typeof(memResult[key]), typeof(resResult[key]),
+            should.equal(typeof memResult[key], typeof resResult[key],
                 url + ' data error! expect:memResult[' + key + ']=' + memResult[key] + ' to' +
                 ' actual:resResult[' + key + ']=' + resResult[key]);
             ep.emit('cb');
