@@ -4,19 +4,19 @@
  *mocha npm address：https://www.npmjs.com/package/mocha
  */
 
-const util = require('util');
-const fs = require('fs');
-const logger = require('swishlog').logger(__filename);
-const supertest = require('supertest');
-const should = require('should');
-const eventproxy = require('eventproxy');
-const sellerLogin = require('../data/sellerLogin.json');
-const sellerLogout = require('../data/sellerLogout.json');
-const buyerLogin = require('../data/buyerLogin');
-const buyerLogout = require('../data/buyerLogout');
-const sellerHeader = require('../data/seller_header.json');
-const buyerHeader = require('../data/buyer_header.json');
-const newOrder = require('../data/order/api_seller_v1_neworder');
+const util = require('util'),
+      fs = require('fs'),
+      logger = require('swishlog').logger(__filename),
+      supertest = require('supertest'),
+      should = require('should'),
+      eventproxy = require('eventproxy'),
+      sellerLogin = require('../data/sellerLogin'),
+      sellerLogout = require('../data/sellerLogout'),
+      buyerLogin = require('../data/buyerLogin'),
+      buyerLogout = require('../data/buyerLogout'),
+      sellerHeader = require('../data/seller_header'),
+      buyerHeader = require('../data/buyer_header'),
+      newOrder = require('../data/order/api_seller_v1_neworder');
 
 // 模拟登陆相关的数据
 var sellerLoginReq = supertest.agent('http://' + sellerLogin.req_header.Host);
@@ -29,10 +29,11 @@ var path = __dirname + '/../data/api/';
 var arrayDatas = [];
 var picPath = __dirname + '/../data/pic/';
 var picArr = [];
+
 // 标书ID
 var biddocID;
-var sellerResBody;
-var buyerResBody;
+var sellerResBody;      // 保存卖家模拟登陆的res
+var buyerResBody;       // 保存买家模拟登陆的res
 
 //mocha框架
 describe('回归测试', function () {
@@ -51,8 +52,7 @@ describe('回归测试', function () {
             }
 
             files.forEach(function (file) {
-                var data = require(path + file);
-                arrayDatas.push(data);
+                arrayDatas.push(require(path + file));
             });
             done();
         });
@@ -72,8 +72,7 @@ describe('回归测试', function () {
             }
 
             files.forEach(function (file) {
-                var data = require(picPath + file);
-                picArr.push(data);
+                picArr.push(require(picPath + file));
             });
             done();
         });
@@ -88,7 +87,7 @@ describe('回归测试', function () {
             .expect(200)
             .end(function (err, res) {
                 if (err) {
-                    logger.error('supertest内部错误，error:' + err);
+                    logger.error('卖家登录，supertest内部错误，error:' + err);
                     return done(err);
                 }
 
@@ -105,7 +104,7 @@ describe('回归测试', function () {
             .expect(200)
             .end(function (err, res) {
                 if (err) {
-                    logger.error('supertest内部错误，error:' + err);
+                    logger.error('买家登录，supertest内部错误，error:' + err);
                     return done(err);
                 }
 
@@ -286,7 +285,8 @@ describe('回归测试', function () {
             member.req_header['Authorization'] = sellerResBody.result.user_access_token;    //身份验证token写入即将发送的header里面
 
             //发送请求
-            request['post'](member.api_url)
+            request
+                .post(member.api_url)
                 .set(member.req_header)
                 .attach('companyMainPhoto', __dirname + '/../photo/test.jpg')       //attach图片
                 .expect(200)
@@ -302,20 +302,22 @@ describe('回归测试', function () {
     it("卖家成功退出系统", function (done) {
         sellerLogout.req_header['Authorization'] = sellerResBody.result.user_access_token;     //token写到头里面
 
-        sellerLogoutReq[sellerLogout.req_method.toLocaleLowerCase()](sellerLogout.api_url)
+        sellerLogoutReq
+            [sellerLogout.req_method.toLocaleLowerCase()](sellerLogout.api_url)
             .set(sellerLogout.req_header)
             .expect(200)
             .end(function (err, res) {
                 should.not.exist(err, "卖家退出系统错误：" + util.inspect(err));
                 should.equal(sellerLogout.res_body.code, res.body.code, "卖家退出系统错误：" + util.inspect(res.body));
                 done();
-            });
+        });
     });
 
     it("买家成功退出系统", function (done) {
         buyerLogout.req_header['Authorization'] = buyerResBody.result.user_access_token;     //token写到头里面
 
-        buyerLogoutReq[buyerLogout.req_method.toLocaleLowerCase()](buyerLogout.api_url)
+        buyerLogoutReq
+            [buyerLogout.req_method.toLocaleLowerCase()](buyerLogout.api_url)
             .set(buyerLogout.req_header)
             .expect(200)
             .end(function (err, res) {
