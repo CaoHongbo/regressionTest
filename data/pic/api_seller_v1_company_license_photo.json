@@ -1,5 +1,5 @@
 {
-  "api_url" : "/api/seller/v1.0/company_main_photo",
+  "api_url" : "/api/seller/v1.0/company_license_photo",
   "req_method" : "POST",
   "req_header" : {
     "Host" : "203.195.242.135:16000",
