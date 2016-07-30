@@ -3,20 +3,19 @@
  *该模块实现了mocha框架的测试
  *mocha npm address：https://www.npmjs.com/package/mocha
  */
-
-const util = require('util'),
-      fs = require('fs'),
-      logger = require('swishlog').logger(__filename),
-      supertest = require('supertest'),
-      should = require('should'),
-      eventproxy = require('eventproxy'),
-      sellerLogin = require('../data/sellerLogin'),
-      sellerLogout = require('../data/sellerLogout'),
-      buyerLogin = require('../data/buyerLogin'),
-      buyerLogout = require('../data/buyerLogout'),
-      sellerHeader = require('../data/seller_header'),
-      buyerHeader = require('../data/buyer_header'),
-      newOrder = require('../data/order/api_seller_v1_neworder');
+const util = require('util')
+    , fs = require('fs')
+    , logger = require('swishlog').logger(__filename)
+    , supertest = require('supertest')
+    , should = require('should')
+    , eventproxy = require('eventproxy')
+    , sellerLogin = require('../data/sellerLogin')
+    , sellerLogout = require('../data/sellerLogout')
+    , buyerLogin = require('../data/buyerLogin')
+    , buyerLogout = require('../data/buyerLogout')
+    , sellerHeader = require('../data/seller_header')
+    , buyerHeader = require('../data/buyer_header')
+    , newOrder = require('../data/order/api_seller_v1_neworder');
 
 // 模拟登陆相关的数据
 var sellerLoginReq = supertest.agent('http://' + sellerLogin.req_header.Host);
@@ -32,11 +31,17 @@ var picArr = [];
 
 // 标书ID
 var biddocID;
-var sellerResBody;      // 保存卖家模拟登陆的res
+var sellerResBody;       // 保存卖家模拟登陆的res
 var buyerResBody;       // 保存买家模拟登陆的res
+
+// Authorization token
+var tokenSel;
+var tokenBuy;
 
 //mocha框架
 describe('回归测试', function () {
+
+    this.timeout(0);    // do not use mocha timeout
 
     //收集数据
     before(function (done) {
@@ -78,41 +83,6 @@ describe('回归测试', function () {
         });
     });
 
-
-    //卖家模拟登陆
-    before(function (done) {
-        sellerLoginReq[sellerLogin.req_method.toLocaleLowerCase()](sellerLogin.api_url)
-            .set(sellerLogin.req_header)
-            .send(sellerLogin.req_body)
-            .expect(200)
-            .end(function (err, res) {
-                if (err) {
-                    logger.error('卖家登录，supertest内部错误，error:' + err);
-                    return done(err);
-                }
-
-                sellerResBody = res.body;
-                done();
-            });
-    });
-
-    //买家模拟登陆
-    before(function (done) {
-        buyerLoginReq[buyerLogin.req_method.toLocaleLowerCase()](buyerLogin.api_url)
-            .set(buyerLogin.req_header)
-            .send(buyerLogin.req_body)
-            .expect(200)
-            .end(function (err, res) {
-                if (err) {
-                    logger.error('买家登录，supertest内部错误，error:' + err);
-                    return done(err);
-                }
-
-                buyerResBody = res.body;
-                done();
-            });
-    });
-
     it('测试数据准备完毕', function (done) {
         try {
             should.notEqual(arrayDatas.length, 0, '数据错误');
@@ -124,18 +94,43 @@ describe('回归测试', function () {
         done();
     });
 
-    it('买家、卖家模拟登陆成功', function (done) {
-        try {
-            should.equal(sellerResBody['code'], 0, '卖家模拟登陆失败!');
-            should.equal(buyerResBody['code'], 0, '买家模拟登陆失败!');
-        } catch (err) {
-            logger.error('模拟登陆失败！');
-            logger.error('seller登录返回信息：' + util.inspect(sellerResBody));
-            logger.error('buyer登录返回信息：' + util.inspect(buyerResBody));
-            return done(err);
-        }
-        logger.debug('买家、卖家模拟登陆成功！');
-        done();
+
+    //卖家模拟登陆
+    it('卖家模拟登陆成功', function (done) {
+        sellerLoginReq
+            [sellerLogin.req_method.toLocaleLowerCase()](sellerLogin.api_url)
+            .set(sellerLogin.req_header)
+            .send(sellerLogin.req_body)
+            .expect(200)
+            .end(function (err, res) {
+                // 获取res返回值和token
+                sellerResBody = res.body;
+                tokenSel = res.body.result.user_access_token;
+                // should校验
+                should.not.exist(err, '卖家登录，supertest出错:' + util.inspect(err));
+                should.exist(sellerResBody, '卖家模拟登陆失败!');
+                should.equal(sellerResBody['code'], 0, '卖家模拟登陆失败!');
+                done();
+        });
+    });
+
+    //买家模拟登陆
+    it('买家模拟登陆成功', function (done) {
+        buyerLoginReq
+            [buyerLogin.req_method.toLocaleLowerCase()](buyerLogin.api_url)
+            .set(buyerLogin.req_header)
+            .send(buyerLogin.req_body)
+            .expect(200)
+            .end(function (err, res) {
+                // 获取res返回值和token
+                buyerResBody = res.body;
+                tokenBuy = res.body.result.user_access_token;
+                // should校验
+                should.not.exist(err, '买家登录，supertest出错:' + util.inspect(err));
+                should.exist(buyerResBody, '买家模拟登陆失败!');
+                should.equal(buyerResBody['code'], 0, '买家模拟登陆失败!');
+                done();
+        });
     });
 
     it('卖家请求API测试成功', function (done) {
@@ -300,7 +295,7 @@ describe('回归测试', function () {
     });
 
     it("卖家成功退出系统", function (done) {
-        sellerLogout.req_header['Authorization'] = sellerResBody.result.user_access_token;     //token写到头里面
+        sellerLogout.req_header['Authorization'] = tokenSel;     //token写到头里面
 
         sellerLogoutReq
             [sellerLogout.req_method.toLocaleLowerCase()](sellerLogout.api_url)
@@ -314,7 +309,7 @@ describe('回归测试', function () {
     });
 
     it("买家成功退出系统", function (done) {
-        buyerLogout.req_header['Authorization'] = buyerResBody.result.user_access_token;     //token写到头里面
+        buyerLogout.req_header['Authorization'] = tokenBuy;     //token写到头里面
 
         buyerLogoutReq
             [buyerLogout.req_method.toLocaleLowerCase()](buyerLogout.api_url)
@@ -324,7 +319,7 @@ describe('回归测试', function () {
                 should.not.exist(err, "买家退出系统错误：" + util.inspect(err));
                 should.equal(buyerLogout.res_body.code, res.body.code, "买家退出系统错误：" + util.inspect(res.body));
                 done();
-            });
+        });
     });
 
 });
